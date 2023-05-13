@@ -7,18 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script>
+        window.onload = function () {
+            document.querySelector('i.bx-menu').onclick = function () {
+                document.querySelector('.menu-toogle ul').classList.add('active');
+                document.querySelector('.menu-toogle ul').classList.remove('inactive');
+                document.querySelector('i.bx-menu').classList.add('d-none');
+                document.querySelector('i.bx-chevron-up').classList.remove('d-none');
+            }
+            document.querySelector('i.bx-chevron-up').onclick = function () {
+                document.querySelector('.menu-toogle ul').classList.add('inactive');
+                document.querySelector('.menu-toogle ul').classList.remove('active');
+                document.querySelector('i.bx-chevron-up').classList.add('d-none');
+                document.querySelector('i.bx-menu').classList.remove('d-none');
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div id="bg_olo">
         <nav>
-            <div class="p-3">
+            <div class="mx-5 d-flex p-3 justify-content-between">
                 <img src="Logo officiel.jpeg" alt="logo_olo" height="90">
+                <div class="menu-toogle pt-3">
+                    <ul class="list-items pt-2 inactive">
+                        <li class="active">Accueil</li>
+                        <li>Candidats</li>
+                        <li>Entreprises</li>
+                        <li>OLO Sourcing</li>
+                    </ul>
+                    <i class='bx bx-chevron-up text-white icon-size d-none'></i>
+                    <i class='bx bx-menu text-white icon-size'></i>
+                </div>
             </div>
         </nav>
-        <div class="d-flex h-75">
+        <div class="container d-flex h-75">
             <div class="d-flex flex-column justify-content-center px-5 w-50">
                 <div class="text-main">
                     <div><span class="text-transparent text-font2">Faire briller </span> <span
@@ -30,11 +57,11 @@
                             Demain.</span>
                     </div>
                 </div>
-                <div class="text-white">
+                <p class="text-white fw-400">
                     OLO Sourcing, connecte dans le monde entier les talents de Madagascar aux entreprises à la pointe de
                     l'innovation. Nous sommes les agents de ces talents, et travaillons dans l’ombre pour les faire
                     briller. Commencez dès maintenant, en quelques clics.
-                </div>
+                </p>
                 <div class="p-3">
                     <button class="btn-1 mr-2">Vous postulez</button>
                     <button class="btn-2 ml-2">Vous recrutez</button>

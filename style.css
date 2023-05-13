@@ -24,6 +24,10 @@
     background-size: cover;
 }
 
+.fw-400 {
+    font-weight: 400;
+}
+
 .text-main {
     font-size: 3rem;
     font-weight: 900;
@@ -42,6 +46,48 @@
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
     text-shadow: none;
+}
+
+.menu-toogle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .menu-toogle .bx-chevron-up {
+    display: none;
+} */
+
+.menu-toogle ul.active {
+    transform: scaleY(1);
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+
+.menu-toogle ul.inactive {
+    transform: scaleY(0);
+    width: 0;
+    overflow: hidden;
+    transition: transform 250ms ease-out;
+}
+
+.list-items {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1.5rem;
+    color: white;
+}
+
+.list-items li {
+    padding: 0 10px;
+}
+
+.list-items li.active {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.icon-size {
+    font-size: 2.5rem;
 }
 
 .btn-1 {
