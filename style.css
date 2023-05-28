@@ -25,6 +25,11 @@
     --grey3-color: #58595b;
 }
 
+p {
+    font-family: 'helveticaNeue1';
+    font-size: 19px;
+}
+
 #bg_olo {
     width: 100vw;
     height: 100vh;
@@ -34,13 +39,14 @@
 
 .fw-400 {
     font-weight: 400;
+    /* font-size: 17; */
 }
 
 .text-main {
     font-family: 'Montserrat';
     font-size: 3rem;
     margin-bottom: 2.5rem;
-    width: 102%;
+    width: 104%;
 }
 
 .text-yellow {
@@ -131,9 +137,7 @@
 }
 
 p.text-white.fw-400 {
-    font-family: helveticaNeue1;
     margin-bottom: 3rem;
-    font-size: 17px;
 }
 
 .btn-vous {
@@ -165,7 +169,7 @@ p.text-white.fw-400 {
 .main-consultant {
     position: absolute;
     /* height: 100% !important; */
-    height: 104% !important;
+    height: 105% !important;
     bottom: 0%;
 }
 
@@ -189,7 +193,8 @@ p.text-white.fw-400 {
     width: 100%;
     background-image: url('Barre_polygone.svg');
     background-size: cover;
-    bottom: 0;
+    /* bottom: 0; */
+    bottom: -8px;
     z-index: 1;
     filter: drop-shadow(0px -20px 10px rgba(0, 0, 0, 0.1));
 }
@@ -219,4 +224,64 @@ p.text-white.fw-400 {
     background-color: var(--grey1-color);
     height: 1px;
     width: 100px;
+}
+
+#partner_olo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Design\ light\ 2.svg);
+    background-size: cover;
+}
+
+#partner_olo h1 {
+    font-family: 'Montserrat';
+    color: var(--grey1-color);
+    font-size: 3.5rem !important;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 25px;
+}
+
+.partner_title_1,
+.partner_title_2 {
+    display: flex;
+}
+
+.title_blue {
+    color: var(--blue-color);
+}
+
+.title_yellow {
+    color: var(--yellow-color);
+}
+
+#partner_olo p {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey3-color);
+    padding-bottom: 50px;
+}
+
+#partner_olo h3 {
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#partner_olo .partner_intro {
+    padding-bottom: 10px;
+}
+
+#partner_olo .partner_band {
+    height: 30%;
+    background: #f4f4f4;
 }
