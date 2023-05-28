@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
+@font-face {
+    font-family: helveticaNeue1;
+    src: url(HelveticaNeue_Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +14,15 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', 'Paytone One', 'sans-serif';
+    font-family: 'Montserrat', 'helveticaNeue1', 'Paytone One', 'sans-serif';
 }
 
 :root {
-    --yellow-color: #e8c410;
+    --yellow-color: #ecc505;
     --blue-color: #30428d;
+    --grey1-color: #B3B3B3;
+    --grey2-color: #9a9898;
+    --grey3-color: #58595b;
 }
 
 #bg_olo {
@@ -29,8 +37,10 @@
 }
 
 .text-main {
+    font-family: 'Montserrat';
     font-size: 3rem;
-    font-weight: 900;
+    margin-bottom: 2.5rem;
+    width: 102%;
 }
 
 .text-yellow {
@@ -38,7 +48,9 @@
 }
 
 .text-font2 {
-    font-family: 'Paytone One';
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.2em;
 }
 
 .text-transparent {
@@ -61,6 +73,8 @@
     transform: scaleY(1);
     width: 100%;
     transition: transform 0.5s ease-out;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .menu-toogle ul.inactive {
@@ -94,7 +108,7 @@
     color: var(--yellow-color);
     border-color: var(--yellow-color);
     background-color: transparent;
-    border: 1px solid;
+    border: 2px solid;
     padding: 0.5rem;
 }
 
@@ -107,4 +121,100 @@
 .main-consultant {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+
+/* Modifiain */
+.p-3 {
+    padding: 16px !important;
+}
+
+p.text-white.fw-400 {
+    font-family: helveticaNeue1;
+    margin-bottom: 3rem;
+    font-size: 17px;
+}
+
+.btn-vous {
+    /* padding-top: 20px; */
+}
+
+.btn-1.mr-2,
+.btn-2.ml-2 {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-2.ml-2 {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, .15);
+}
+
+.container.d-flex.h-75 {
+    position: relative;
+    height: 86% !important;
+    max-width: 1655px !important;
+}
+
+.main-consultant {
+    position: absolute;
+    /* height: 100% !important; */
+    height: 104% !important;
+    bottom: 0%;
+}
+
+.d-flex.flex-column.justify-content-center.px-5.w-50 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+    left: 9%;
+    bottom: 8%;
+}
+
+.d-flex.justify-content-center.w-50 {
+    position: relative;
+    right: 5%;
+}
+
+#bg_olo::before {
+    content: '';
+    position: absolute;
+    height: 170px;
+    width: 100%;
+    background-image: url('Barre_polygone.svg');
+    background-size: cover;
+    bottom: 0;
+    z-index: 1;
+    filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.1))
+}
+
+.band_services {
+    color: var(--grey1-color);
+    position: absolute;
+    bottom: 4%;
+    z-index: 2;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.trait_liste_services {
+    display: flex;
+    align-items: center;
+}
+
+.liste_services {
+    font-size: 28px;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.trait_service {
+    background-color: var(--grey1-color);
+    height: 1px;
+    width: 100px;
 }
