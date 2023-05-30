@@ -227,7 +227,6 @@ p.text-white.fw-400 {
 
 #partner_olo,
 #service_olo {
-    width: 100vw;
     height: 100vh;
     background-image: url(Design light 2.svg);
     background-size: cover;
