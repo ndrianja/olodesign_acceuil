@@ -31,9 +31,8 @@ p {
 }
 
 #bg_olo {
-    width: 100vw;
     height: 100vh;
-    background: url('Fond\ bleu.svg');
+    background: url('Fond bleu.svg');
     background-size: cover;
 }
 
@@ -230,7 +229,7 @@ p.text-white.fw-400 {
 #service_olo {
     width: 100vw;
     height: 100vh;
-    background-image: url(Design\ light\ 2.svg);
+    background-image: url(Design light 2.svg);
     background-size: cover;
 }
 

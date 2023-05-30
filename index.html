@@ -6,33 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="olo_website/static/src/css/olo-acceuil.css" />
+    <script src="olo_website/static/src/js/olo-acceuil.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script>
-        window.onload = function () {
-            document.querySelector('i.bx-menu').onclick = function () {
-                document.querySelector('.menu-toogle ul').classList.add('active');
-                document.querySelector('.menu-toogle ul').classList.remove('inactive');
-                document.querySelector('i.bx-menu').classList.add('d-none');
-                document.querySelector('i.bx-chevron-up').classList.remove('d-none');
-            }
-            document.querySelector('i.bx-chevron-up').onclick = function () {
-                document.querySelector('.menu-toogle ul').classList.add('inactive');
-                document.querySelector('.menu-toogle ul').classList.remove('active');
-                document.querySelector('i.bx-chevron-up').classList.add('d-none');
-                document.querySelector('i.bx-menu').classList.remove('d-none');
-            }
-        }
-    </script>
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
 </head>
 
 <body>
     <div id="bg_olo">
         <nav>
             <div class="mx-5 d-flex p-3 justify-content-between">
-                <img src="Logo officiel.jpeg" alt="logo_olo" height="75">
+                <img src="olo_website/static/description/Logo officiel.jpeg" alt="logo_olo" height="75" />
                 <div class="menu-toogle pt-3">
                     <ul class="list-items pt-2 inactive">
                         <li class="active">Accueil</li>
@@ -47,30 +32,20 @@
         </nav>
         <div class="container d-flex h-75">
             <div class="d-flex flex-column justify-content-center px-5 w-50">
-                <img src="Slogan.svg" class="text-main">
-                <!-- <div class="text-main">
-                    <div><span class="text-transparent text-font2">Faire briller </span> <span
-                            class="text-white text-font2">les
-                            Talents.</span>
-                    </div>
-                    <div><span class="text-transparent text-font2">D’aujourd’hui, </span> <span
-                            class="text-yellow text-font2">de
-                            Demain.</span>
-                    </div>
-                </div> -->
+                <img src="olo_website/static/description/Slogan.svg" class="text-main" alt="slogan" />
                 <p class="text-white fw-400">
                     OLO Sourcing, connecte dans le monde entier les talents de Madagascar aux entreprises à la pointe de
                     l'innovation. Nous sommes les agents de ces talents, et travaillons dans l’ombre pour les faire
                     briller. Commencez dès maintenant, en quelques clics.
                 </p>
-                <!-- <div class="p-3"> -->
                 <div class="btn-vous">
                     <button class="btn-1 mr-2">VOUS POSTULEZ</button>
                     <button class="btn-2 ml-2">VOUS RECRUTEZ</button>
                 </div>
             </div>
             <div class="d-flex justify-content-center w-50">
-                <img src="consulting-homme.png" alt="consultant-homme" class="main-consultant">
+                <img src="olo_website/static/description/consulting-homme.png" alt="consultant-homme"
+                    class="main-consultant" />
             </div>
             <div class="band_services">
                 <span>NOS SERVICES</span>
