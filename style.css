@@ -226,14 +226,16 @@ p.text-white.fw-400 {
     width: 100px;
 }
 
-#partner_olo {
+#partner_olo,
+#service_olo {
     width: 100vw;
     height: 100vh;
     background-image: url(Design\ light\ 2.svg);
     background-size: cover;
 }
 
-#partner_olo h1 {
+#partner_olo h1,
+#service_olo h1 {
     font-family: 'Montserrat';
     color: var(--grey1-color);
     font-size: 3.5rem !important;
@@ -284,4 +286,58 @@ p.text-white.fw-400 {
 #partner_olo .partner_band {
     height: 30%;
     background: #f4f4f4;
+}
+
+#service_olo .service_card {
+    font-family: 'Montserrat';
+    font-size: 21px;
+    font-weight: 500;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .1);
+}
+
+.title_card {
+    width: 100%;
+    display: grid;
+    height: 25%;
+    background-color: var(--blue-color);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.service_card a {
+    font-family: 'helveticaNeue1';
+    font-size: 17px;
+    color: var(--yellow-color) !important;
+    font-weight: 600;
+}
+
+.service_card .text_card {
+    font-size: 17px;
+    padding: 12px;
+}
+
+.service_list {
+    display: flex;
+
+}
+
+.service_card .button_card {}
+
+.service_card button {
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--yellow-color);
+    color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
 }
