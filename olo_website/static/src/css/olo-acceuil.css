@@ -225,15 +225,21 @@ p.text-white.fw-400 {
     width: 100px;
 }
 
-#partner_olo,
+#partner_olo {
+    height: 100vh;
+    background-image: url('Design light.svg');
+    background-size: cover;
+}
+
 #service_olo {
     height: 100vh;
-    background-image: url(Design light 2.svg);
+    background-image: url('Design light 2.svg');
     background-size: cover;
 }
 
 #partner_olo h1,
-#service_olo h1 {
+#service_olo h1,
+#partie45_olo h1 {
     font-family: 'Montserrat';
     color: var(--grey1-color);
     font-size: 3.5rem !important;
@@ -244,6 +250,10 @@ p.text-white.fw-400 {
     align-items: center;
     padding-top: 120px;
     padding-bottom: 25px;
+}
+
+#partie45_olo h1 {
+    color: var(--yellow-color);
 }
 
 .partner_title_1,
@@ -340,4 +350,50 @@ p.text-white.fw-400 {
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
+}
+
+#partie45_olo {
+    height: 100vh;
+    background-image: url('Design light 2.svg');
+    background-size: cover;
+}
+
+.proactif_olo,
+.conseil_olo {
+    max-width: 1280px;
+    height: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proactif_olo h3,
+.conseil_text h3 {
+    color: var(--blue-color);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.proactif_text,
+.conseil_text {
+    display: grid;
+    align-content: center;
+    padding-left: 40px;
+}
+
+.conseil_olo {
+    max-width: 1280px;
+    height: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proactif_olo {
+    margin-bottom: 50px;
+}
+
+.conseil_text {
+    padding-left: 0px;
+    padding-right: 40px;
 }
