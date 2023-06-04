@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: helveticaNeue1;
@@ -14,7 +15,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', 'helveticaNeue1', 'Paytone One', 'sans-serif';
+    font-family: 'Montserrat', 'helveticaNeue1', 'League Spartan', 'sans-serif';
 }
 
 :root {
@@ -586,175 +587,71 @@ p.text-white.fw-400 {
     }
 }
 
-/* 
-
-.wordCarousel div {
-    overflow: hidden;
-    position: relative;
-    float: right;
-    height: 50px;
-    letter-spacing: 0.05rem;
+.o_footer {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: radial-gradient(circle closest-corner at 20% 20%, #165fc0 0%, #30428d 100%);
 }
 
-.wordCarousel div li {
-    margin-bottom: 45px;
-    display: block;
-    font-size: 28px;
+.o_footer .o_footer_copyright {
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-.flip5 {
-    animation: flip5 9s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+.shadow-sm {
+    display: contents;
+    color: white;
+}
+
+.o_colored_level.g-height-3.g-.col-lg-3.o_we_force_no_transition li {
+    font-family: 'helveticaNeue1';
+}
+
+.o_colored_level.g-.g-height-3.col-lg-3 li {
+    font-family: 'helveticaNeue1';
+}
+
+section.s_text_block.pb16 {
+    padding: 15px;
+}
+
+.o_footer_copyright_name.me-2,
+.o_brand_promotion {
+    font-family: 'League Spartan';
+    color: #B3B3B3;
 }
 
 
-@keyframes flip2 {
-    0% {
-        margin-top: -180px;
-    }
-
-    5% {
-        margin-top: -90px;
-    }
-
-    50% {
-        margin-top: -90px;
-    }
-
-    55% {
-        margin-top: 0px;
-    }
-
-    99.99% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -180px;
-    }
+.o_colored_level.g-height-3.g-.col-lg-3.o_we_force_no_transition,
+.o_colored_level.g-.g-height-3.col-lg-3 {
+    color: white;
 }
 
-@keyframes flip3 {
-    0% {
-        margin-top: -270px;
-    }
-
-    5% {
-        margin-top: -180px;
-    }
-
-    33% {
-        margin-top: -180px;
-    }
-
-    38% {
-        margin-top: -90px;
-    }
-
-    66% {
-        margin-top: -90px;
-    }
-
-    71% {
-        margin-top: 0px;
-    }
-
-    99.99% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -270px;
-    }
+.o_colored_level.g-height-3.g-.col-lg-3.o_we_force_no_transition h2,
+.o_colored_level.g-.g-height-3.col-lg-3 h3,
+.o_colored_level.g-.g-height-3.col-lg-3.pb0 h3 {
+    font-family: 'helveticaNeue1';
+    font-size: 30px;
 }
 
-@keyframes flip4 {
-    0% {
-        margin-top: -360px;
-    }
-
-    5% {
-        margin-top: -270px;
-    }
-
-    25% {
-        margin-top: -270px;
-    }
-
-    30% {
-        margin-top: -180px;
-    }
-
-    50% {
-        margin-top: -180px;
-    }
-
-    55% {
-        margin-top: -90px;
-    }
-
-    75% {
-        margin-top: -90px;
-    }
-
-    80% {
-        margin-top: 0px;
-    }
-
-    99.99% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -360px;
-    }
+a.badge.text-bg-light {
+    color: black;
+    background-color: #f4f4f4;
+    padding: 4px;
 }
 
-@keyframes flip5 {
-    0% {
-        margin-top: -450px;
-    }
+.o_colored_level.g-.g-height-3.col-lg-3 a {
+    color: var(--yellow-color);
+    font-family: 'helveticaNeue1';
+}
 
-    5% {
-        margin-top: -360px;
-    }
+input.js_subscribe_value.form-control {
+    width: 60%;
+    border-radius: 25px;
+}
 
-    20% {
-        margin-top: -360px;
-    }
+.input-group>.form-control {
+    flex: none;
+}
 
-    25% {
-        margin-top: -270px;
-    }
-
-    40% {
-        margin-top: -270px;
-    }
-
-    45% {
-        margin-top: -180px;
-    }
-
-    60% {
-        margin-top: -180px;
-    }
-
-    65% {
-        margin-top: -90px;
-    }
-
-    80% {
-        margin-top: -90px;
-    }
-
-    85% {
-        margin-top: 0px;
-    }
-
-    99.99% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -450px;
-    }
-} */
+a.js_subscribe_btn.o_submit.o_default_snippet_text {
+    padding-left: 8px;
+}
