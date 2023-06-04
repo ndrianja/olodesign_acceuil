@@ -118,6 +118,15 @@ p {
     transition: transform 250ms ease-out;
 }
 
+.menu-toogle li a:hover {
+    text-decoration: none;
+}
+
+.menu-toogle li:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 .list-items {
     display: flex;
     list-style-type: none;
