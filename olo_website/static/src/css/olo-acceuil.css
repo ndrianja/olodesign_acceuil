@@ -318,10 +318,12 @@ p.text-white.fw-400 {
 
 .title_blue {
     color: var(--blue-color);
+    margin-right: 10px;
 }
 
 .title_yellow {
     color: var(--yellow-color);
+    margin-right: 12px;
 }
 
 #partner_olo p {
