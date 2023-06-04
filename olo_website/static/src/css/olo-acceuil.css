@@ -398,6 +398,7 @@ p.text-white.fw-400 {
 .service_card .text_card {
     font-size: 17px;
     padding: 12px;
+    height: 188px;
 }
 
 .service_list {
