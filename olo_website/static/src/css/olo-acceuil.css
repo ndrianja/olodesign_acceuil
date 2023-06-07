@@ -45,8 +45,12 @@ p {
     width: 100%;
     height: 107px;
     z-index: 1;
-
 }
+
+/* .header.logo_olo {
+    position: absolute;
+    z-index: 1000;
+} */
 
 #Calque_1 {
     margin-bottom: 2rem;
@@ -168,7 +172,6 @@ p {
     z-index: 2;
 }
 
-/* Modifiain */
 .p-3 {
     padding: 16px !important;
 }
@@ -199,15 +202,18 @@ p.text-white.fw-400 {
 
     &:hover {
         box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .btn-2.ml-2 {
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, .1);
-    /* box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2); */
 
     &:hover {
         box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -254,6 +260,7 @@ p.text-white.fw-400 {
 }
 
 .band_services {
+    display: none;
     color: var(--grey1-color);
     position: absolute;
     bottom: 4%;
@@ -284,16 +291,48 @@ p.text-white.fw-400 {
     height: 100vh;
     background-image: url('Design light.svg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #service_olo {
     height: 100vh;
-    background-image: url('Design light 2.svg');
+    /* background-image: url('Design light 2.svg'); */
+    background-image: url('Fond\ bleu.svg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+
+    & h1 {
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 3.5rem !important;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.5%;
+    }
+}
+
+#service_olo h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 3.5rem !important;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5%;
 }
 
 #partner_olo h1,
-#service_olo h1,
+/* #service_olo h1, */
 #partie45_olo h1 {
     font-family: 'Montserrat';
     color: var(--grey1-color);
@@ -350,7 +389,7 @@ p.text-white.fw-400 {
 
 #partner_olo .partner_band {
     height: 30%;
-    background: #f4f4f4;
+    background: white;
     overflow: hidden;
 }
 
@@ -385,8 +424,55 @@ p.text-white.fw-400 {
     font-weight: 500;
     width: 250px;
     height: 350px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .1);
-    margin-right: 14px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.service_card:hover {
+    box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-10px);
+}
+
+.service_card button:hover {
+    font-size: 16px;
+}
+
+#service_olo .service_stat {
+    background-color: white;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 2%;
+}
+
+.service_stat div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat_number {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.service_stat h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: var(--grey1-color);
+}
+
+.service_stat span {
+    /* font-family: 'helveticaNeue1'; */
+    font-family: 'League Spartan';
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--grey3-color);
 }
 
 .title_card {
@@ -416,6 +502,9 @@ p.text-white.fw-400 {
 .service_list {
     display: flex;
     justify-content: center;
+    padding-bottom: 3%;
+    column-gap: 1%;
+    /* Espace entre grid */
 }
 
 .service_card .button_card {}
@@ -446,6 +535,9 @@ p.text-white.fw-400 {
     height: 100vh;
     background-image: url('Design light 2.svg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .proactif_olo,
@@ -455,6 +547,28 @@ p.text-white.fw-400 {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    z-index: 0;
+}
+
+.proactif_olo::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    background-color: var(--yellow-color);
+    z-index: -1;
+    transform: translate(-10%, -7%);
+}
+
+.conseil_olo::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    background-color: var(--blue-color);
+    z-index: -1;
+    right: 14%;
+    transform: translate(0px, -25px);
 }
 
 .proactif_olo h3,
@@ -480,7 +594,7 @@ p.text-white.fw-400 {
 }
 
 .proactif_olo {
-    margin-bottom: 50px;
+    margin-bottom: 2%;
 }
 
 .conseil_text {
