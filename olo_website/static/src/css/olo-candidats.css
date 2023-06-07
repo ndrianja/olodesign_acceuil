@@ -20,7 +20,7 @@
     flex-direction: column;
     padding-top: 4%;
     gap: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
 }
 
 #candidats_olo .candidats_research h1 {
@@ -79,16 +79,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .offres_pertinentes h3 {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    /* color: var(--blue-color); */
     color: var(--grey2-color);
     font-family: 'League Spartan';
     letter-spacing: 8px;
+    margin-bottom: -5px;
 }
 
 .pertinentes_list {
@@ -161,5 +163,34 @@
 
     &:hover {
         box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+    }
+}
+
+.toutes_offres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.trait1,
+.trait2 {
+    height: 2px;
+    width: 150px;
+    background-color: #ecc505;
+    transition: 0.5;
+}
+
+.toutes_offres:hover {
+    gap: 0px;
+
+    /* background-color: red; */
+    & .trait1 {
+        transform: translateX(20px);
+    }
+
+    & .trait2 {
+        transform: translateX(-12.5px);
     }
 }
