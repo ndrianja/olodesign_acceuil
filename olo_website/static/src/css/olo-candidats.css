@@ -130,6 +130,7 @@
 
 .text_kanban {
     font-size: 17px;
+    font-family: 'helveticaNeue1';
     height: 150px;
     margin-bottom: 0;
     padding-top: 10px;
@@ -138,6 +139,16 @@
     padding-right: 15px;
     font-size: 16px;
     color: var(--grey3-color);
+
+    & p {
+        font-size: 16px;
+    }
+
+    & div {
+        display: flex;
+        gap: 3%;
+        height: 25px;
+    }
 }
 
 .pertinentes_kanban {

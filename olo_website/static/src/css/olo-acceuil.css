@@ -432,6 +432,7 @@ p.text-white.fw-400 {
 .service_card:hover {
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.2) !important;
     transform: translateY(-10px);
+    background-size: 85%;
 }
 
 .service_card button:hover {
@@ -498,6 +499,7 @@ p.text-white.fw-400 {
     font-size: 17px;
     padding: 12px;
     height: 188px;
+    transition: 0.5s;
 }
 
 .service_list {
@@ -506,6 +508,46 @@ p.text-white.fw-400 {
     padding-bottom: 3%;
     column-gap: 1%;
     /* Espace entre grid */
+}
+
+.service_list div:nth-child(1) p {
+    background-image: url('recrutement.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.service_list div:nth-child(2) p {
+    background-image: url('externalisation.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.service_list div:nth-child(3) p {
+    background-image: url('mise-a-jour-du-systeme.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.service_list div:nth-child(4) p {
+    background-image: url('education.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.service_list div:nth-child(5) p {
+    background-image: url('groupe.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.service_card:hover .text_card {
+    background-size: contain;
+    transition: 0.5s;
 }
 
 .service_card .button_card {}
