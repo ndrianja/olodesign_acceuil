@@ -298,8 +298,8 @@ p.text-white.fw-400 {
 
 #service_olo {
     height: 100vh;
-    /* background-image: url('Design light 2.svg'); */
-    background-image: url('Fond\ bleu.svg');
+    /* background-image: url('Fond\ bleu.svg'); */
+    background-image: url('Fond\ Bleu\ &\ Blanc.svg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -320,7 +320,8 @@ p.text-white.fw-400 {
 }
 
 #service_olo h1 {
-    color: white;
+    /* color: white; */
+    color: var(--grey1-color);
     font-family: 'Montserrat';
     font-size: 3.5rem !important;
     font-weight: 900;
