@@ -16,6 +16,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Montserrat', 'helveticaNeue1', 'League Spartan', 'sans-serif';
+    transition: 0.5s;
 }
 
 :root {
@@ -38,13 +39,22 @@ p {
 }
 
 .header {
-    background-image: url(Fond\ bleu.svg);
+    background-image: url('Fond\ bleu.svg');
     background-size: cover;
     box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, .2);
     position: fixed;
     width: 100%;
-    height: 107px;
+    height: 107px !important;
     z-index: 1;
+    display: flex;
+
+    & .mx-5.d-flex.p-3.justify-content-between {
+        width: 100%;
+    }
+
+    & img.logo_olo {
+        height: 100%;
+    }
 }
 
 /* .header.logo_olo {
@@ -110,7 +120,7 @@ p {
 .menu-toogle ul.active {
     transform: scaleY(1);
     width: 100%;
-    transition: transform 0.5s ease-out;
+    /* transition: transform 0.5s ease-out; */
     font-size: 20px;
     font-weight: 300;
 }
@@ -119,7 +129,7 @@ p {
     transform: scaleY(0);
     width: 0;
     overflow: hidden;
-    transition: transform 250ms ease-out;
+    /* transition: transform 250ms ease-out; */
 }
 
 .menu-toogle li a:hover {
@@ -169,7 +179,11 @@ p {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
-    z-index: 2;
+    /* z-index: 2; */
+    position: absolute;
+    height: 105% !important;
+    bottom: 2%;
+    z-index: 1;
 }
 
 .p-3 {
@@ -181,7 +195,9 @@ p.text-white.fw-400 {
 }
 
 .btn-vous {
-    /* padding-top: 20px; */
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
 }
 
 .btn-1.mr-2,
@@ -194,7 +210,9 @@ p.text-white.fw-400 {
     padding-top: 12px;
     padding-bottom: 10px;
     cursor: pointer;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .btn-1.mr-2 {
@@ -212,7 +230,7 @@ p.text-white.fw-400 {
 
     &:hover {
         box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-        padding-left: 15px;
+        padding-left: 21px;
         padding-right: 15px;
     }
 }
@@ -223,14 +241,6 @@ p.text-white.fw-400 {
     max-width: 1655px !important;
     top: 120px;
 
-}
-
-.main-consultant {
-    position: absolute;
-    /* height: 100% !important; */
-    height: 105% !important;
-    bottom: 0%;
-    z-index: 1;
 }
 
 .d-flex.flex-column.justify-content-center.px-5.w-50 {
@@ -320,7 +330,6 @@ p.text-white.fw-400 {
 }
 
 #service_olo h1 {
-    /* color: white; */
     color: var(--grey1-color);
     font-family: 'Montserrat';
     font-size: 3.5rem !important;
@@ -333,7 +342,6 @@ p.text-white.fw-400 {
 }
 
 #partner_olo h1,
-/* #service_olo h1, */
 #partie45_olo h1 {
     font-family: 'Montserrat';
     color: var(--grey1-color);
@@ -426,13 +434,12 @@ p.text-white.fw-400 {
     width: 250px;
     height: 350px;
     background-color: white;
-    transition: 0.3s;
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out, background-size 0.4s ease-in-out;
 }
 
 .service_card:hover {
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.2) !important;
     transform: translateY(-10px);
-    background-size: 85%;
 }
 
 .service_card button:hover {
@@ -499,7 +506,7 @@ p.text-white.fw-400 {
     font-size: 17px;
     padding: 12px;
     height: 188px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .service_list {
@@ -546,8 +553,7 @@ p.text-white.fw-400 {
 }
 
 .service_card:hover .text_card {
-    background-size: contain;
-    transition: 0.5s;
+    background-size: 80%;
 }
 
 .service_card .button_card {}
@@ -566,7 +572,7 @@ p.text-white.fw-400 {
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
 
     &:hover {
@@ -586,7 +592,7 @@ p.text-white.fw-400 {
 .proactif_olo,
 .conseil_olo {
     max-width: 1280px;
-    height: 275px;
+    height: 260px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -596,8 +602,8 @@ p.text-white.fw-400 {
 .proactif_olo::before {
     content: '';
     position: absolute;
-    width: 420px;
-    height: 325px;
+    width: 400px;
+    height: 300px;
     background-color: var(--yellow-color);
     z-index: -1;
     transform: translate(-10%, -7%);
@@ -606,12 +612,12 @@ p.text-white.fw-400 {
 .conseil_olo::before {
     content: '';
     position: absolute;
-    width: 450px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
     background-color: var(--blue-color);
     z-index: -1;
     right: 14%;
-    transform: translate(0px, -25px);
+    transform: translate(0px, -20px);
 }
 
 .proactif_olo h3,
@@ -628,12 +634,9 @@ p.text-white.fw-400 {
     padding-left: 40px;
 }
 
-.conseil_olo {
-    max-width: 1280px;
-    height: 300px;
+.btn-proactif {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 2%;
 }
 
 .proactif_olo {
@@ -822,4 +825,245 @@ input.js_subscribe_value.form-control {
 
 a.js_subscribe_btn.o_submit.o_default_snippet_text {
     padding-left: 8px;
+}
+
+@media only screen and (max-width: 1366px) {
+    p {
+        font-size: 18px;
+    }
+
+    .header {
+        height: 100px !important;
+    }
+
+    .main-consultant {
+        height: 100% !important;
+    }
+
+    #Calque_1 {
+        width: 110%;
+    }
+
+    #bg_olo::before {
+        height: 130px;
+    }
+
+    .container.d-flex.h-75 {
+        top: 108px;
+    }
+
+    .d-flex.justify-content-center.w-50 {
+        right: 4%;
+    }
+
+    .btn-1.mr-2,
+    .btn-2.ml-2 {
+        font-size: 20px;
+    }
+
+    #service_olo h1 {
+        font-size: 3.25rem !important;
+        padding-bottom: 0.5%;
+    }
+
+    #service_olo .service_card {
+        font-size: 20px;
+        width: 220px;
+        height: 315px
+    }
+
+    #service_olo .service_stat {
+        height: 20%;
+    }
+
+    .service_stat h2 {
+        font-size: 1.75rem;
+    }
+
+    p.text_card {
+        font-size: 16px !important;
+        margin-bottom: 0;
+    }
+
+    .service_card a {
+        font-size: 16px;
+    }
+
+    #partner_olo h1,
+    #partie45_olo h1 {
+        font-size: 3.25rem !important;
+    }
+
+    #partner_olo h3 {
+        font-size: 2.25rem;
+    }
+
+    #partner_olo .partner_band {
+        height: 27%;
+    }
+
+    .service_card button {
+        font-size: 16px;
+    }
+
+    .proactif_olo,
+    .conseil_olo {
+        max-width: 1200px;
+        height: 250px;
+    }
+
+    .proactif_olo h3,
+    .conseil_text h3 {
+        font-size: 33px;
+    }
+
+    .proactif_olo::before,
+    .conseil_olo::before {
+        width: 385px;
+        height: 300px;
+    }
+
+    .conseil_olo::before {
+        right: 8%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .proactif_olo,
+    .conseil_olo {
+        max-width: 1120px;
+        height: 250px;
+    }
+
+    .service_list {
+        flex-wrap: wrap;
+        row-gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #service_olo .service_card {
+        font-size: 18px;
+    }
+
+    p.text_card {
+        font-size: 15px !important;
+    }
+
+    .service_card a {
+        font-size: 15px;
+    }
+
+    .service_card button {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    p {
+        font-size: 16px;
+    }
+
+    .menu-toogle ul.active {
+        font-size: 18px;
+    }
+
+    #Calque_1 {
+        width: 115%;
+    }
+
+    .main-consultant {
+        height: 95% !important;
+    }
+
+    .btn-1.mr-2,
+    .btn-2.ml-2 {
+        font-size: 18px;
+    }
+
+    #partner_olo h1,
+    #partie45_olo h1,
+    #service_olo h1 {
+        font-size: 3rem !important;
+    }
+
+    #partner_olo h3 {
+        font-size: 2rem;
+    }
+
+    #partner_olo .partner_band {
+        height: 25%;
+    }
+
+    .title_card {
+        font-size: 17px;
+    }
+
+    p.text_card {
+        font-size: 15px !important;
+    }
+
+    .service_card button,
+    .service_card a {
+        font-size: 14px;
+    }
+
+    .service_card .button_card {
+        position: relative;
+        top: 2%;
+    }
+
+    .service_card button:hover {
+        font-size: 13px;
+    }
+
+    .service_stat h2 {
+        font-size: 1.5rem;
+    }
+
+    .service_stat span {
+        font-size: 15px;
+    }
+
+    .proactif_olo,
+    .conseil_olo {
+        max-width: 920px;
+        height: 230px;
+    }
+
+    .proactif_olo h3,
+    .conseil_text h3 {
+        font-size: 30px;
+    }
+
+    .proactif_olo::before,
+    .conseil_olo::before {
+        width: 350px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    #service_olo .service_stat {
+        flex-wrap: wrap;
+    }
+
+    .service_stat div {
+        max-width: 175px;
+    }
+
+    .proactif_olo,
+    .conseil_olo {
+        max-width: 95%;
+        height: 230px;
+    }
+
+    .proactif_olo {
+        margin-bottom: 8%;
+    }
+
 }

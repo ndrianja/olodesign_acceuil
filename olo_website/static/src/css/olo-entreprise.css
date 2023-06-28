@@ -43,7 +43,7 @@ p {
     position: fixed;
     width: 100%;
     height: 107px;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -51,10 +51,6 @@ p {
     display: flex;
     justify-content: flex-end;
 }
-
-/* .menu-toogle .bx-chevron-up {
-    display: none;
-} */
 
 .menu-toogle ul.active {
     transform: scaleY(1);
@@ -89,4 +85,101 @@ p {
 
 .icon-size {
     font-size: 2.5rem;
+}
+
+#entreprise_olo {
+    background-image: url('Design\ light.svg');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+/* #entreprise_olo::after {
+    content: '';
+    background-image: url('Fond\ bleu.svg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    clip-path: ellipse(100% 15% at 50% 50%);
+    z-index: 0;
+} */
+
+.band_bleu {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    top: 4%;
+}
+
+.container_band {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    max-width: 1200px;
+    height: 350px;
+    /* clip-path: ellipse(100% 15% at 50% 50%);
+    background-image: url('Fond\ bleu.svg'); */
+
+    & p {
+        color: white;
+    }
+}
+
+
+.container_band::before {
+    content: '';
+    background-image: url('Fond\ bleu.svg');
+    clip-path: ellipse(100% 15% at 50% 50%);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.container_band_2 {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    max-width: 1200px;
+    height: 350px;
+
+    & p {
+        color: var(--grey3-color);
+    }
+
+    & h3 {
+        color: var(--blue-color) !important;
+    }
+}
+
+.container_band_2::before {
+    content: '';
+    background-color: var(--yellow-color);
+    clip-path: ellipse(100% 15% at 50% 50%);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.text_surband h3 {
+    color: var(--yellow-color);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+img.fond_entreprise {
+    height: 100%;
 }
