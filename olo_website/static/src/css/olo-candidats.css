@@ -4,6 +4,7 @@
     --grey1-color: #B3B3B3;
     --grey2-color: #9a9898;
     --grey3-color: #58595b;
+
 }
 
 #candidats_olo {
@@ -37,13 +38,28 @@
     color: var(--yellow-color);
 }
 
+.titre_blanc {
+    color: white !important;
+    opacity: 0;
+    animation: rightimation 1s ease 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.titre_jaune {
+    animation: leftimation 1s ease 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 #candidats_olo .candidats_research h3 {
-    /* color: var(--grey1-color); */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 200;
+    animation: upimation 1s ease 1.25s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .research_bar {
@@ -51,11 +67,12 @@
     justify-content: center;
     column-gap: 0.75%;
     height: 59px;
+    animation: upimation 1s ease 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .research_bar input {
-    /* border-radius: 20px; */
-    /* font-family: 'helveticaNeue1'; */
     opacity: 80%;
     font-weight: 300;
 
@@ -68,6 +85,15 @@
     width: 30%;
     padding-left: 15px;
     padding-right: 15px;
+    animation: upimation 1s ease 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.btn_job {
+    animation: upimation 1s ease 1.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .workplace {
@@ -99,6 +125,10 @@
     justify-content: center;
     gap: 1%;
     height: 275px;
+
+    animation: upimation 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .pertinentes_kanban {
@@ -119,7 +149,7 @@
 .title_kanban {
     width: 100%;
     display: grid;
-    height: 75px;
+    height: 30%;
     background-color: var(--blue-color);
     color: white;
     text-align: center;
@@ -132,7 +162,8 @@
 .text_kanban {
     font-size: 17px;
     font-family: 'helveticaNeue1';
-    height: 150px;
+    height: 50%;
+    /* height: 150px; */
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -197,7 +228,6 @@
 .toutes_offres:hover {
     gap: 0px;
 
-    /* background-color: red; */
     & .trait1 {
         transform: translateX(20px);
     }
@@ -482,4 +512,29 @@ button.btn-details {
 .card-job.card-body.d-flex.flex-row.w-100.mb-3.p-0 {
     border-radius: 40px;
     box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .pertinentes_kanban {
+        width: 225px;
+    }
+
+    .title_kanban {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .pertinentes_list {
+        height: 250px;
+    }
+
+    .text_kanban p {
+        font-size: 15px;
+    }
+
+    .pertinentes_kanban button {
+        font-size: 15px;
+    }
 }

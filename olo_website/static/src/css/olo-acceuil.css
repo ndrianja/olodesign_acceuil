@@ -47,6 +47,7 @@ p {
     height: 107px !important;
     z-index: 1;
     display: flex;
+    animation: downimation 1s ease;
 
     & .mx-5.d-flex.p-3.justify-content-between {
         width: 100%;
@@ -192,12 +193,14 @@ p {
 
 p.text-white.fw-400 {
     margin-bottom: 3rem;
+    width: 92%;
 }
 
 .btn-vous {
     display: flex;
     gap: 2%;
     flex-wrap: wrap;
+    animation: upimation 3s ease;
 }
 
 .btn-1.mr-2,
@@ -259,14 +262,15 @@ p.text-white.fw-400 {
 #bg_olo::before {
     content: '';
     position: absolute;
-    height: 170px;
+    height: 150px;
     width: 100%;
     background-image: url('Barre_polygone.svg');
     background-size: cover;
     bottom: 0;
-    /* bottom: -8px; */
     z-index: 2;
     filter: drop-shadow(0px -20px 10px rgba(0, 0, 0, 0.1));
+    transition: 0.5s;
+    animation: upimation 1s ease;
 }
 
 .band_services {
@@ -394,6 +398,9 @@ p.text-white.fw-400 {
 
 #partner_olo .partner_intro {
     padding-bottom: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #partner_olo .partner_band {
@@ -829,7 +836,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
 @media only screen and (max-width: 1366px) {
     p {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .header {
@@ -933,7 +940,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .proactif_olo,
     .conseil_olo {
-        max-width: 1120px;
+        max-width: 90%;
         height: 250px;
     }
 
@@ -958,6 +965,10 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .service_card button {
         font-size: 15px;
+    }
+
+    .proactif_olo {
+        margin-bottom: 4%;
     }
 }
 
@@ -1030,7 +1041,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .proactif_olo,
     .conseil_olo {
-        max-width: 920px;
+        max-width: 95%;
         height: 230px;
     }
 
@@ -1056,6 +1067,10 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         max-width: 175px;
     }
 
+    #partner_olo p {
+        width: 90%;
+    }
+
     .proactif_olo,
     .conseil_olo {
         max-width: 95%;
@@ -1066,4 +1081,104 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         margin-bottom: 8%;
     }
 
+}
+
+/*** vvv Via JavaScript vvv ***/
+.forScrollUp {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.forScrollUp.scrollActive {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.forScrollDown {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.forScrollDown.scrollActive {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.forScrollLeft {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.forScrollLeft.scrollActive {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.forScrollRight {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.forScrollRight.scrollActive {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*** ^^^ By JavaScript ^^^ ***/
+
+
+@keyframes downimation {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes upimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftimation {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightimation {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
