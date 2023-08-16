@@ -23,6 +23,17 @@
     --grey1-color: #B3B3B3;
     --grey2-color: #9a9898;
     --grey3-color: #58595b;
+    
+    --col1: #f5a210;
+    --col2: #dd2566;
+    --col3: #45af60;
+    --col4: #21a6d8;
+    --col5: #bc3736;
+    --col11: #f8a818;
+    --col22: #e62b6c;
+    --col33: #55b366;
+    --col44: #27b3e5;
+    --col55: #cd3c3d;
 }
 
 p {
@@ -244,4 +255,118 @@ p {
 
 .carousel_content:hover .carousel_color {
     background: rgba(0, 0, 0, .2);
+}
+
+#diagram {
+    height: 100vh;
+    background-image: url("Diagramme\ de\ cercle.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#diagram .diagram_title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+}
+
+#diagram h2 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 23px;
+    color: var(--grey1-color);
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    transform: translateY(74px);
+}
+
+#diagram h3 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-wrap: nowrap;
+}
+
+#diagram p {
+    color: var(--grey3-color);
+    font-size: 17px;
+    line-height: 20px;
+}
+#diagram .d1 {
+    width: 270px;
+    text-align: center;
+    transform: translateY(-180px);
+    position: absolute;
+}
+
+.d1_title {
+    color: var(--col1);
+}
+
+.d1 .diagram_title {
+    justify-content: center;
+}
+
+.d25 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20%;
+    width: 80%;
+    transform: translateY(70px);
+    justify-content: space-around;
+}
+
+#diagram .d2 {
+    width: 100%;
+    text-align: left;
+}
+
+.d2_title {
+    color: var(--col4);
+}
+
+#diagram .d5 {
+    width: 100%;
+    text-align: right;
+}
+
+.d5_title {
+    color: var(--col5);
+}
+
+.d5 .diagram_title,
+.d4 .diagram_title {
+    justify-content: end;
+}
+
+.d4_title {
+    color: var(--col2);
+}
+
+.d3_title {
+    color: var(--col3);
+}
+
+.d34 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* column-gap: 10%; */
+    width: 70%;
+    transform: translateY(175px);
+    justify-content: space-around;
+}
+
+#diagram .d4 {
+    max-width: 500px;
+    text-align: right;
+}
+
+#diagram .d3 {
+    max-width: 500px;
+    text-align: left;
 }
