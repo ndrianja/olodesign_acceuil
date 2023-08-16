@@ -1,0 +1,22 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <style>.cls-1{fill:#b3b3b3;}</style>
+    </defs>
+    <title>Pointillés</title>
+    <circle class="cls-1" cx="27.5" cy="27.5" r="2.5"/>
+    <circle class="cls-1" cx="27.5" cy="42.5" r="2.5"/>
+    <circle class="cls-1" cx="27.5" cy="57.5" r="2.5"/>
+    <circle class="cls-1" cx="27.5" cy="72.5" r="2.5"/>
+    <circle class="cls-1" cx="42.5" cy="27.5" r="2.5"/>
+    <circle class="cls-1" cx="42.5" cy="42.5" r="2.5"/>
+    <circle class="cls-1" cx="57.5" cy="42.5" r="2.5"/>
+    <circle class="cls-1" cx="72.5" cy="42.5" r="2.5"/>
+    <circle class="cls-1" cx="42.5" cy="57.5" r="2.5"/>
+    <circle class="cls-1" cx="57.5" cy="57.5" r="2.5"/>
+    <circle class="cls-1" cx="72.5" cy="57.5" r="2.5"/>
+    <circle class="cls-1" cx="42.5" cy="72.5" r="2.5"/>
+    <circle class="cls-1" cx="57.5" cy="72.5" r="2.5"/>
+    <circle class="cls-1" cx="72.5" cy="72.5" r="2.5"/>
+    <circle class="cls-1" cx="57.5" cy="27.5" r="2.5"/>
+    <circle class="cls-1" cx="72.5" cy="27.5" r="2.5"/>
+</svg>

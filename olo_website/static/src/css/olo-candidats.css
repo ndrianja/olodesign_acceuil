@@ -75,10 +75,14 @@
 .research_bar input {
     opacity: 80%;
     font-weight: 300;
-
+    /* 
     &::placeholder {
         color: var(--grey2-color);
-    }
+    } */
+}
+
+.research_bar input::placeholder {
+    color: var(--grey2-color);
 }
 
 .research_keyword {
@@ -156,7 +160,7 @@
     align-items: center;
     padding: 10px;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .text_kanban {
@@ -171,16 +175,17 @@
     padding-right: 15px;
     font-size: 16px;
     color: var(--grey3-color);
+}
 
-    & p {
-        font-size: 16px;
-    }
+.text_kanban p {
+    font-size: 16px;
+}
 
-    & div {
-        display: flex;
-        gap: 3%;
-        height: 25px;
-    }
+.text_kanban div {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    height: 25px;
 }
 
 .pertinentes_kanban {
@@ -203,10 +208,10 @@
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+}
 
-    &:hover {
-        box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-    }
+.pertinentes_kanban button:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
 }
 
 .toutes_offres {
@@ -227,14 +232,14 @@
 
 .toutes_offres:hover {
     gap: 0px;
+}
 
-    & .trait1 {
-        transform: translateX(20px);
-    }
+.toutes_offres:hover .trait1 {
+    transform: translateX(20px);
+}
 
-    & .trait2 {
-        transform: translateX(-12.5px);
-    }
+.toutes_offres:hover .trait2 {
+    transform: translateX(-12.5px);
 }
 
 
