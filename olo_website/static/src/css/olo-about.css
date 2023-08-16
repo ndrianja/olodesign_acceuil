@@ -99,7 +99,7 @@ p {
     position: inherit;
     top: 120px;
     text-transform: uppercase;
-    height: 70%;
+    height: 55%;
 }
 
 .about_carousel h1 {
@@ -147,8 +147,9 @@ p {
     height: 30%;
     width: 100%;
     background-color: white;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    bottom: 0;
 
     border-top-style: solid;
     border-top-width: 9px;
@@ -179,5 +180,39 @@ p {
 
 .carousel_text p {
     color: var(--grey3-color);
-    width: 40%;
+    width: 50%;
+}
+
+.text_gauche {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel_text .text_gauche {
+    height: 86%;
+    width: 15%;
+}
+
+#Motif_bleu {
+    position: absolute;
+    height: 100%;
+}
+
+.text_gauche h3 {
+    z-index: 1;
+    font-family: 'Montserrat';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.7rem;
+    width: 100%;
+    letter-spacing: 1px;
+    padding-top: 9%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
 }
