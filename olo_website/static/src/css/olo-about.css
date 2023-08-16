@@ -286,7 +286,7 @@ p {
 
 #diagram h3 {
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 500;
     text-wrap: nowrap;
 }
 
@@ -369,4 +369,148 @@ p {
 #diagram .d3 {
     max-width: 500px;
     text-align: left;
+}
+
+#postuler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    justify-content: center;
+    padding: 10%;
+}
+
+#postuler button {
+    text-transform: uppercase;
+    margin-top: 1.5%;
+}
+
+.postuler_text_anim {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center !important;
+    white-space: nowrap;
+    flex-wrap: nowrap !important;
+    width: min-content !important;
+    animation: showup 7s infinite;
+}
+
+.postuler_text_anim span {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--grey2-color);
+}
+
+.cliquer {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: showBesoin 7s infinite;
+}
+
+.cliquer span {
+    margin-left: -100%;
+    animation: showBesoinToRight 7s infinite;
+}
+
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    25% {
+        margin-left: -800px;
+    }
+
+    50% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        /* width: 355px; */
+        width: 600px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        /* width: 355px; */
+        width: 600px;
+    }
+}
+
+@keyframes showBesoin {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: min-content;
+    }
+}
+
+@keyframes showBesoinToRight {
+    0% {
+        margin-left: -100%;
+    }
+
+    20% {
+        margin-left: -100%;
+    }
+
+    35% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }

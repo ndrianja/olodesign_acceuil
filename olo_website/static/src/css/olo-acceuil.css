@@ -198,7 +198,7 @@ p.text-white.fw-400 {
 
 .btn-1.mr-2,
 .btn-2.ml-2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 22px;
     font-weight: 500;
     padding-left: 25px;
@@ -317,25 +317,12 @@ p.text-white.fw-400 {
 
 #service_olo {
     height: 100vh;
-    /* background-image: url('Fond\ bleu.svg'); */
     background-image: url('Fond\ Bleu\ &\ Blanc.svg');
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 5%;
-
-    /* & h1 {
-        color: white;
-        font-family: 'Montserrat';
-        font-size: 3.5rem !important;
-        font-weight: 900;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1.5%;
-    } */
 }
 
 #service_olo h1 {
