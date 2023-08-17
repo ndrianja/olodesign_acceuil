@@ -32,6 +32,7 @@ window.onload = function () {
             }
         }, duration);
     });
+    $('#carouselExampleControls').carousel();
 }
 
 function reveal() {
