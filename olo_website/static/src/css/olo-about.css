@@ -130,8 +130,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: max-content;
-    /* width: 100%; */
+    /* width: max-content; */
+    width: 100%;
 }
 
 .carousel_content button {
@@ -281,7 +281,7 @@ p {
     position: absolute;
     width: 10%;
     text-align: center;
-    transform: translateY(74px);
+    transform: translateY(100%);
 }
 
 #diagram h3 {
@@ -413,6 +413,24 @@ p {
 .cliquer span {
     margin-left: -100%;
     animation: showBesoinToRight 7s infinite;
+}
+
+.carousel-control-prev {
+    left: 4%;
+    height: 40px;
+    width: 40px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.carousel-control-next {
+    right: 4%;
+    height: 40px;
+    width: 40px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
 }
 
 
