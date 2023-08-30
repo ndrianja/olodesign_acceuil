@@ -32,7 +32,7 @@ window.onload = function () {
             }
         }, duration);
     });
-    $('#carouselExampleControls').carousel();
+    // $('#carouselExampleControls').carousel();
 }
 
 function reveal() {

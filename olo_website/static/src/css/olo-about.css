@@ -110,7 +110,7 @@ p {
     position: inherit;
     top: 120px;
     text-transform: uppercase;
-    height: 55%;
+    /* height: 55%; */
 }
 
 .about_carousel h1 {
@@ -130,8 +130,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: max-content; */
     width: 100%;
+    bottom: 140px;
 }
 
 .carousel_content button {
@@ -259,7 +259,8 @@ p {
 
 #diagram {
     height: 100vh;
-    background-image: url("Diagramme\ de\ cercle.svg");
+    /* background-image: url("Diagramme\ de\ cercle.svg"); */
+    background-image: url("Diagramme\ de\ cercle\ light@1.5x.png");
     background-size: cover;
     display: flex;
     justify-content: center;
