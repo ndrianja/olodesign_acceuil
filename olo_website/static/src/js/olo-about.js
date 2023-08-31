@@ -1,3 +1,4 @@
 window.onload = function () {
-    $('#carouselExampleControls').carousel();
+    menu();
+    slide();
 }
