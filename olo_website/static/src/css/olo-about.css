@@ -533,3 +533,54 @@ p {
         margin-left: 0;
     }
 }
+
+@media only screen and (max-width: 1366px) {
+    .about_carousel button {
+        transform: translateY(70px);
+    }
+
+    .carousel-indicators {
+        bottom: 30px !important;
+    }
+
+    .carousel_text .text_gauche {
+        width: 19%;
+    }
+
+    .text_gauche h3 {
+        font-size: 1.5rem;
+        padding-right: 10px;
+    }
+
+    #diagram p {
+        font-size: 15px;
+    }
+
+    #diagram h2 {
+        font-size: 21px;
+        transform: translate(10px,5px);
+    }
+
+    #diagram h3 {
+        font-size: 1.5rem;
+    }
+
+    #diagram .diagram_title img {
+        height: 30px;
+    }
+
+    #diagram .d1 {
+        width: 200px;
+        transform: translateY(-200px);
+    }
+
+    .d25 {
+        transform: none;
+        column-gap: 24%;
+    }
+
+    .d34 {
+        transform: translate(-30px,65px);
+        column-gap: 10%;
+    }
+}
