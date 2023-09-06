@@ -528,6 +528,10 @@ button.btn-details {
     .title_kanban {
         font-size: 16px;
     }
+
+    .list_container {
+        margin-top: 131px;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
