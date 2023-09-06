@@ -875,6 +875,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     #partie45_olo {
         height:114vh;
+        overflow: hidden;
     }
 
     #partner_olo h1,
