@@ -829,11 +829,11 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #bg_olo::before {
-        height: 140px;
+        height: 130px;
     }
 
     .container.d-flex.h-75 {
-        top: 108px;
+        top: 117px;
     }
 
     .d-flex.justify-content-center.w-50 {
@@ -871,6 +871,10 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .service_card a {
         font-size: 16px;
+    }
+
+    #partie45_olo {
+        height:114vh;
     }
 
     #partner_olo h1,
