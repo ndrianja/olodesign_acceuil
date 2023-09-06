@@ -25,6 +25,7 @@
     --grey1-color: #B3B3B3;
     --grey2-color: #9a9898;
     --grey3-color: #58595b;
+    --btn-font-size: 22px;
 }
 
 p {
@@ -200,25 +201,19 @@ p.text-white.fw-400 {
 .btn-2.ml-2 {
     font-family: 'Montserrat';
     font-size: 22px;
+    /* font-size: var(--btn-font-size); */
     font-weight: 500;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 12px;
     padding-bottom: 10px;
     cursor: pointer;
-    /* transition: 0.5s; */
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
 .btn-1.mr-2 {
     box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
-
-    /* &:hover {
-        box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-        padding-left: 15px;
-        padding-right: 15px;
-    } */
 }
 
 .btn-1.mr-2:hover {
@@ -229,12 +224,6 @@ p.text-white.fw-400 {
 
 .btn-2.ml-2 {
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, .1);
-
-    /* &:hover {
-        box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-        padding-left: 21px;
-        padding-right: 15px;
-    } */
 }
 
 .btn-2.ml-2:hover {
@@ -832,6 +821,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         height: 100% !important;
+        bottom: 4%;
     }
 
     #Calque_1 {
@@ -839,7 +829,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #bg_olo::before {
-        height: 130px;
+        height: 140px;
     }
 
     .container.d-flex.h-75 {
@@ -903,7 +893,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     .proactif_olo,
     .conseil_olo {
         max-width: 1200px;
-        height: 250px;
+        height: 225px;
     }
 
     .proactif_olo h3,
@@ -914,7 +904,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     .proactif_olo::before,
     .conseil_olo::before {
         width: 385px;
-        height: 300px;
+        height: 265px;
     }
 
     .conseil_olo::before {
@@ -928,7 +918,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     .proactif_olo,
     .conseil_olo {
         max-width: 90%;
-        height: 250px;
+        height: 225px;
     }
 
     .service_list {
