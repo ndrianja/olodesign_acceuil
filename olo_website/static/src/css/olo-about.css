@@ -257,11 +257,21 @@ p {
     background: rgba(0, 0, 0, .2);
 }
 
-#diagram {
+/* #diagram {
     height: 100vh;
-    /* background-image: url("Diagramme\ de\ cercle.svg"); */
     background-image: url("Diagramme\ de\ cercle\ light@1.5x.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+#diagram {
+    height: 100vh;
+    background-image: url("Pentagone.svg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,12 +287,12 @@ p {
 #diagram h2 {
     font-family: "Montserrat";
     font-weight: 900;
-    font-size: 23px;
+    font-size: 20px;
     color: var(--grey1-color);
     position: absolute;
     width: 10%;
     text-align: center;
-    transform: translateY(100%);
+    transform: translateY(-50%);
 }
 
 #diagram h3 {
@@ -297,9 +307,9 @@ p {
     line-height: 20px;
 }
 #diagram .d1 {
-    width: 270px;
+    width: 240px;
     text-align: center;
-    transform: translateY(-180px);
+    transform: translateY(-240px);
     position: absolute;
 }
 
@@ -317,7 +327,7 @@ p {
     align-items: center;
     column-gap: 20%;
     width: 80%;
-    transform: translateY(70px);
+    /* transform: translateY(70px); */
     justify-content: space-around;
 }
 
@@ -356,9 +366,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* column-gap: 10%; */
     width: 70%;
-    transform: translateY(175px);
+    transform: translateY(70px);
     justify-content: space-around;
 }
 
@@ -557,8 +566,8 @@ p {
     }
 
     #diagram h2 {
-        font-size: 21px;
-        transform: translate(10px,5px);
+        font-size: 19px;
+        transform: translate(0px,-10px);
     }
 
     #diagram h3 {
@@ -571,7 +580,7 @@ p {
 
     #diagram .d1 {
         width: 200px;
-        transform: translateY(-200px);
+        transform: translateY(-220px);
     }
 
     .d25 {
@@ -580,7 +589,22 @@ p {
     }
 
     .d34 {
-        transform: translate(-30px,65px);
+        transform: translate(-39px,35px);
         column-gap: 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #diagram h2 {
+        font-size: 16px;
+    }
+
+    .d34 {
+        width: inherit;
+    }
+
+    .d25 {
+        column-gap: 23%;
+        width: 90%;
     }
 }
