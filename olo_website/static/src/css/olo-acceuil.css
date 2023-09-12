@@ -830,6 +830,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     #bg_olo::before {
         height: 130px;
+		bottom: -20px;
     }
 
     .container.d-flex.h-75 {
