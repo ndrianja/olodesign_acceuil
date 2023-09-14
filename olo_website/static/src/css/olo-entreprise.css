@@ -89,7 +89,8 @@ p {
 }
 
 #company_olo {
-    background-image: url('students-1807505_1920\ \(dark\ moody\).jpg');
+    /* background-image: url('students-1807505_1920\ \(dark\ moody\).jpg'); */
+    background-image: url('Entreprises\ -\ Placez\ l\'humain\ au\ centre.jpg');
     height: 100vh;
     background-size: cover;
     background-position-y: 45%;

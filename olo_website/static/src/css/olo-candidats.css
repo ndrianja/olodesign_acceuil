@@ -12,10 +12,12 @@
 }
 
 #candidats_olo .candidats_research {
-    background-image: url(children-1807511.jpg);
+    /* background-image: url(children-1807511.jpg); */
+    background-image: url(Candidats\ -\ Vous\ êtes\ le\ talent.jpg);
     background-size: cover;
     height: 50%;
-    background-position-y: 50%;
+    /* background-position-y: 50%; */
+    background-position-y: 25%;
     display: flex;
     justify-content: center;
     flex-direction: column;
