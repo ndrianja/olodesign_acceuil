@@ -525,6 +525,10 @@ button.btn-details {
         margin-bottom: 3%; */
     }
 
+    .list_container {
+        margin-top: 90px;
+    }
+
     #candidats_olo .candidats_research {
         height: 45%;
         padding-top: 7%;
