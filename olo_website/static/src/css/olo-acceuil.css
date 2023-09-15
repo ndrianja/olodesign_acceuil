@@ -237,6 +237,7 @@ p.text-white.fw-400 {
     height: 86% !important;
     max-width: 1655px !important;
     top: 120px;
+    overflow: hidden;
 
 }
 
@@ -250,7 +251,7 @@ p.text-white.fw-400 {
 
 .d-flex.justify-content-center.w-50 {
     position: relative;
-    right: 5%;
+    right: 7%;
 }
 
 #bg_olo::before {
@@ -843,7 +844,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     .d-flex.justify-content-center.w-50 {
-        right: 4%;
+        /* right: 4%; */
     }
 
     .btn-1.mr-2,
