@@ -555,6 +555,10 @@ p {
         z-index: 5;
         margin-top: 5%;
     }
+
+    .carousel_text p {
+        font-size: 17px;
+    }
     
     .about_carousel h1 {
         font-size: 3rem;
