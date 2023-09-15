@@ -569,7 +569,8 @@ p {
 
     #diagram h2 {
         font-size: 19px;
-        transform: translate(0px,-10px);
+        transform: translate(0px,-15px);
+        width: 8%;
     }
 
     #diagram h3 {
@@ -598,7 +599,7 @@ p {
 
 @media only screen and (max-width: 1200px) {
     #diagram h2 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .d34 {
