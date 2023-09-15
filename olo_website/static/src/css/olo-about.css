@@ -546,8 +546,23 @@ p {
 }
 
 @media only screen and (max-width: 1366px) {
-    .about_carousel button {
+    /* .about_carousel button {
         transform: translateY(70px);
+    } */
+
+    #diagram {
+        position: relative;
+        z-index: 5;
+        margin-top: 5%;
+    }
+    
+    .about_carousel h1 {
+        font-size: 3rem;
+        transform: translateY(12px);
+    }
+
+    .about_carousel button {
+        transform: translateY(-25px);
     }
 
     .carousel-indicators {
@@ -555,12 +570,14 @@ p {
     }
 
     .carousel_text .text_gauche {
-        width: 19%;
+        width: 15%;
     }
 
     .text_gauche h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        padding-left: 10px;
         padding-right: 10px;
+        padding-top: 34px;
     }
 
     #diagram p {
@@ -574,7 +591,7 @@ p {
     }
 
     #diagram h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #diagram .diagram_title img {
@@ -594,6 +611,11 @@ p {
     .d34 {
         transform: translate(-39px,35px);
         column-gap: 10%;
+    }
+
+    #postuler {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }
 

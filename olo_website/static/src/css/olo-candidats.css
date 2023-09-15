@@ -114,6 +114,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 5;
 }
 
 .offres_pertinentes h3 {
@@ -537,11 +539,15 @@ button.btn-details {
     }
 
     #candidats_olo .candidats_research h1 {
-        font-size: 3rem !important;
+        font-size: 2.75rem !important;
     }
 
     #candidats_olo .candidats_research h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .research_bar {
+        height: 54px;
     }
 
     .offres_pertinentes h3 {

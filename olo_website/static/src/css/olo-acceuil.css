@@ -825,7 +825,12 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #Calque_1 {
-        width: 110%;
+        /* width: 110%; */
+        margin-bottom: 5% !important;
+    }
+
+    p.text-white.fw-400 {
+        margin-bottom: 5% !important;
     }
 
     #bg_olo::before {
@@ -847,14 +852,15 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #service_olo h1 {
-        font-size: 3.25rem !important;
+        font-size: 3rem !important;
         padding-bottom: 0.5%;
     }
 
     #service_olo .service_card {
         font-size: 20px;
         width: 220px;
-        height: 315px
+        /* height: 315px; */
+        height: 290px;
     }
 
     #service_olo .service_stat {
@@ -868,6 +874,11 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     p.text_card {
         font-size: 16px !important;
         margin-bottom: 0;
+        line-height: 22px;
+    }
+
+    .title_card {
+        font-size: 18px;
     }
 
     .service_card a {
@@ -881,7 +892,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     #partner_olo h1,
     #partie45_olo h1 {
-        font-size: 3.25rem !important;
+        font-size: 3rem !important;
     }
 
     #partner_olo h3 {
@@ -894,6 +905,22 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .service_card button {
         font-size: 16px;
+    }
+
+    .service_card .button_card {
+        transform: translateY(-13px);
+    }
+
+    .stat_number {
+        transform: translateY(7px);
+    }
+
+    .stat_number h2 {
+        font-size: 1.5rem;
+    }
+
+    .service_stat span {
+        line-height: 20px;
     }
 
     .proactif_olo,
@@ -917,6 +944,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         right: 8%;
     }
 
+    .o_footer {
+        margin-top: 2.5%;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
