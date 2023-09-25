@@ -97,12 +97,15 @@ p {
 }
 
 #about_olo {
-    /* background-image: url('Fond\ carousel.svg'); */
     background-image: url('Fond\ bleu.svg');
     height: 100vh;
     background-size: cover;
     position: relative;
     overflow: hidden;
+}
+
+#about_olo .carousel-item {
+    filter: grayscale(1);
 }
 
 #about_olo .about_carousel {

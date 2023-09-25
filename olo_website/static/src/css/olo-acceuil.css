@@ -173,7 +173,7 @@ p {
 .main-consultant {
     /* -webkit-transform: scaleX(-1);
     transform: scaleX(-1); */
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+    filter: grayscale(1) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
     /* z-index: 2; */
     position: absolute;
     height: 105% !important;
@@ -609,6 +609,11 @@ p.text-white.fw-400 {
     color: var(--blue-color);
     font-size: 35px;
     font-weight: 400;
+}
+
+.proactif_olo img,
+.conseil_olo img {
+    filter: grayscale(1);
 }
 
 .proactif_text,
