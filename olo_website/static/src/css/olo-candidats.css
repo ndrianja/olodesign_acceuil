@@ -534,16 +534,20 @@ button.btn-details {
     }
 
     #candidats_olo .candidats_research {
-        height: 45%;
+        /* height: 45%; */
+        height: 42%;
         padding-top: 7%;
+        gap: 0.5%;
     }
 
     #candidats_olo .candidats_research h1 {
-        font-size: 2.75rem !important;
+        /* font-size: 2.75rem !important; */
+        font-size: 2.5rem !important;
     }
 
     #candidats_olo .candidats_research h3 {
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
+        font-size: 1.1rem;
     }
 
     .research_bar {
@@ -551,11 +555,46 @@ button.btn-details {
     }
 
     .offres_pertinentes h3 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
+        font-size: 1.25rem;
     }
 
     .pertinentes_list {
-        height: 250px;
+        /* height: 250px; */
+        height: 220px;
+    }
+
+    .pertinentes_kanban {
+        width: 235px;
+    }
+
+    .pertinentes_kanban button {
+        font-size: 15px;
+    }
+
+    .offres_pertinentes {
+        gap: 15px;
+    }
+
+    .title_kanban {
+        height: 28%;
+        font-size: 16px;
+    }
+
+    .text_kanban img {
+        height: 19px;
+    }
+
+    .text_kanban p {
+        font-size: 15px;
+    }
+
+    .btn-1.mr-2, .btn-2.ml-2 {
+        font-size: 18px;
+    }
+
+    #partie45_olo h1 {
+        padding-top: 0;
     }
 }
 
