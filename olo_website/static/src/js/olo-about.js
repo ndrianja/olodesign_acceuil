@@ -12,6 +12,13 @@ window.onload = function () {
         document.querySelector('i.bx-menu').classList.remove('d-none');
     }
     $('#carouselExampleControls').carousel();
+    // Sélectionnez toutes les images à l'intérieur du carousel
+    var carouselImages = document.querySelectorAll('.carousel img');
+
+    // Parcourez les images et supprimez l'attribut loading
+    carouselImages.forEach(function (image) {
+        image.removeAttribute('loading');
+    });
 }
 function reveal() {
     var reveals = document.querySelectorAll(".forScrollUp, .forScrollDown, .forScrollLeft, .forScrollRight");
