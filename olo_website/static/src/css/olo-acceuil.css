@@ -827,7 +827,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         height: 100% !important;
+		width: 100% !important;
         bottom: 5%;
+		right: -17%;
     }
 
     #Calque_1 {
