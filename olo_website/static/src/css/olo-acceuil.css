@@ -177,7 +177,7 @@ p {
     /* z-index: 2; */
     position: absolute;
     height: 105% !important;
-	width:105% !important;
+	/* width:105% !important; */
 	right: -20%;
     bottom: 2%;
     z-index: 1;
@@ -247,7 +247,7 @@ p.text-white.fw-400 {
     padding-left: 0 !important;
     padding-right: 0 !important;
     position: relative;
-    left: 9%;
+    left: 6%;
     bottom: 8%;
 }
 
@@ -829,7 +829,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         height: 100% !important;
-		width: 100% !important;
+		/* width: 100% !important; */
         bottom: 5%;
 		right: -17%;
     }
@@ -1011,7 +1011,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         height: 95% !important;
-		width: 95% !important;
+		/* width: 95% !important; */
 		right: -23%;
     }
 
