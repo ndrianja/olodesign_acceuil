@@ -818,7 +818,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     padding-left: 8px;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (min-width: 1281px)and (max-width: 1366px) {
     p {
         font-size: 17px;
     }
@@ -959,7 +959,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media (min-width: 1150px) and (max-width: 1280px) {
 
     .proactif_olo,
     .conseil_olo {
@@ -973,7 +973,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width:1024px) and (max-width: 1150px) {
     #service_olo .service_card {
         font-size: 18px;
     }
@@ -995,7 +995,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 821px) and (max-width: 1024px) {
 
     p {
         font-size: 16px;
@@ -1082,7 +1082,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
 
     #service_olo .service_stat {
         flex-wrap: wrap;
@@ -1119,7 +1119,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     .main-consultant {
         height: 40% !important;
 		/* width: 95% !important; */
-		right: -23%;
+		right: 0%;
         bottom: -4%;
     }
     .btn-vous {
