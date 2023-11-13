@@ -176,7 +176,9 @@ p {
     filter: grayscale(1) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
     /* z-index: 2; */
     position: absolute;
-    height: 95% !important;
+    max-width: 100%;
+        height: auto;
+        /* height: 95% !important; */
 	/* width:105% !important; */
 	right: -20%;
     bottom: 2%;
@@ -828,7 +830,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     .main-consultant {
-        height: 86% !important;
+        /* height: 86% !important; */
 		/* width: 100% !important; */
         bottom: 5%;
 		right: -17%;
@@ -1010,8 +1012,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     .main-consultant {
-        height: 95% !important;
+        /* height: 95% !important; */
 		/* width: 95% !important; */
+        
 		right: -23%;
     }
 
@@ -1117,8 +1120,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         bottom: 8%;
     }
     .main-consultant {
-        height: 40% !important;
+        /* height: 40% !important; */
 		/* width: 95% !important; */
+        max-width: 150%;
 		right: 0%;
         bottom: -4%;
     }
