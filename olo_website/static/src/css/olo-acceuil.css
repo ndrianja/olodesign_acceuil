@@ -176,7 +176,7 @@ p {
     filter: grayscale(1) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
     /* z-index: 2; */
     position: absolute;
-    max-width: 100%;
+    max-width: 110%;
         height: auto;
         /* height: 95% !important; */
 	/* width:105% !important; */
