@@ -7,6 +7,12 @@
     src: url(HelveticaNeue_Light.ttf);
 }
 
+@media screen and (max-width: 768px) {
+    .div-responsive {
+        flex-direction: row;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +41,7 @@ p {
 
 #bg_olo {
     height: 100vh;
+    width: 100vw;
     background: url('Fond bleu.svg');
     background-size: cover;
 }
@@ -44,7 +51,7 @@ p {
     background-size: cover;
     box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, .2);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 107px !important;
     z-index: 10 !important;
     display: flex;
@@ -177,10 +184,10 @@ p {
     /* z-index: 2; */
     position: absolute;
     max-width: 110%;
-        height: auto;
-        /* height: 95% !important; */
-	/* width:105% !important; */
-	right: -20%;
+    height: auto;
+    /* height: 95% !important; */
+    /* width:105% !important; */
+    right: -20%;
     bottom: 2%;
     z-index: 1;
 }
@@ -498,6 +505,8 @@ p.text-white.fw-400 {
 }
 
 .service_list {
+    height: 70vh;
+    margin: 10px;
     display: flex;
     justify-content: center;
     padding-bottom: 3%;
@@ -831,9 +840,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         /* height: 86% !important; */
-		/* width: 100% !important; */
+        /* width: 100% !important; */
         bottom: 5%;
-		right: -17%;
+        right: -17%;
     }
 
     #Calque_1 {
@@ -847,7 +856,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     #bg_olo::before {
         height: 130px;
-		bottom: -20px;
+        bottom: -20px;
     }
 
     .container.d-flex.h-75 {
@@ -898,7 +907,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #partie45_olo {
-        height:114vh;
+        height: 114vh;
         overflow: hidden;
     }
 
@@ -1013,9 +1022,9 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .main-consultant {
         /* height: 95% !important; */
-		/* width: 95% !important; */
-        
-		right: -23%;
+        /* width: 95% !important; */
+
+        right: -23%;
     }
 
     .btn-1.mr-2,
@@ -1101,6 +1110,8 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 
     .proactif_olo,
     .conseil_olo {
+        display: flex;
+        flex-direction: column;
         max-width: 95%;
         height: 230px;
     }
@@ -1119,25 +1130,38 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         left: 26%;
         bottom: 8%;
     }
+
     .main-consultant {
         /* height: 40% !important; */
-		/* width: 95% !important; */
+        /* width: 95% !important; */
         max-width: 150%;
-		right: 0%;
+        right: 0%;
         bottom: -4%;
     }
+
     .btn-vous {
         display: flex;
         gap: 2%;
         flex-wrap: nowrap;
         animation: upimation 3s ease;
     }
+
+    @media screen and (max-width: 768px) {
+        .btn-vous {
+            width: 50px;
+        }
+    }
+
     .container.d-flex.h-75 {
         top: 33px;
     }
-    #partner_olo h1, #partie45_olo h1, #service_olo h1 {
+
+    #partner_olo h1,
+    #partie45_olo h1,
+    #service_olo h1 {
         font-size: 2rem !important;
     }
+
     p {
         font-size: 16px;
     }
@@ -1152,6 +1176,8 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 }
 
 .forScrollUp.scrollActive {
+    display: flex;
+    flex-wrap: wrap;
     transform: translateY(0);
     opacity: 1;
 }
