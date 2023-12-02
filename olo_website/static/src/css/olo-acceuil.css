@@ -829,7 +829,7 @@ a.badge.text-bg-light {
     padding: 4px;
 }
 
-.o_colored_level.g-.g-height-3.col-lg-3 a {
+.o_colored_level.g-.g-height-3 a {
     color: var(--yellow-color);
     font-family: 'helveticaNeue1';
 }
@@ -1309,7 +1309,13 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         width: 90%;
     }
 
-    .proactif_olo,
+    .proactif_olo {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        height: 230px;
+    }
+
     .conseil_olo {
         display: flex;
         flex-direction: column;
@@ -1365,6 +1371,15 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
             height: 700px;
             left: 7%;
             bottom: 12%;
+        }
+
+        #footer .letternews {
+            justify-content: start !important;
+            margin-left: 13px;
+        }
+
+        #footer .logo {
+            height: 100px !important;
         }
     }
 
