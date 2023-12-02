@@ -34,6 +34,13 @@
     --btn-font-size: 22px;
 }
 
+#bg_olo,
+#partner_olo,
+#service_olo,
+#partie45_olo {
+    overflow: hidden;
+}
+
 p {
     font-family: 'helveticaNeue1';
     font-size: 19px;
@@ -317,7 +324,7 @@ p.text-white.fw-400 {
 }
 
 #service_olo {
-    height: 60vh;
+    /* height: 60vh; */
     background-image: url('Fond\ Bleu\ &\ Blanc.svg');
     background-size: cover;
     display: flex;
@@ -348,7 +355,7 @@ p.text-white.fw-400 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 25px;
 }
 
@@ -389,7 +396,7 @@ p.text-white.fw-400 {
     font-weight: 300;
 }
 
-#partner_olo .partner_intro {
+#partner_olo.partner_intro {
     padding-bottom: 10px;
     width: 50%;
     margin-left: auto;
@@ -426,6 +433,7 @@ p.text-white.fw-400 {
     font-family: 'Montserrat';
     font-size: 21px;
     font-weight: 500;
+    margin-bottom: 1.3%;
     width: 250px;
     height: 350px;
     background-color: white;
@@ -446,17 +454,25 @@ p.text-white.fw-400 {
     height: 21%;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     column-gap: 2%;
 }
 
-.service_stat div {
-    width: 200px;
+#service_olo .service_stat_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#service_olo .service_stat_2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 50%;
+}
+
+#service_olo .service_stat_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .stat_number {
@@ -464,6 +480,8 @@ p.text-white.fw-400 {
     flex-direction: row !important;
     justify-content: center;
 }
+
+.service_stat_container {}
 
 .service_stat h2 {
     font-family: 'Montserrat';
@@ -505,7 +523,7 @@ p.text-white.fw-400 {
 }
 
 .service_list {
-    height: 45vh;
+    /* height: 45vh; */
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -829,7 +847,210 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     padding-left: 8px;
 }
 
-@media only screen and (min-width: 1281px)and (max-width: 1366px) {
+@media only screen and (max-width: 1600px) {
+    #service_olo h1 {
+        font-size: 3rem !important;
+        padding-bottom: 0.5%;
+    }
+
+    #service_olo .service_card {
+        /* font-size: 19px; */
+        width: 270px;
+        height: 300px;
+    }
+
+    .title_card {
+        font-size: 16px;
+    }
+
+    .service_card .text_card {
+        font-size: 16px;
+        padding: 12px;
+        height: 200px;
+        /* transition: 0.5s; */
+    }
+
+    .service_stat span {
+        line-height: 18px;
+    }
+
+    .service_card button {
+        font-size: 14px;
+        margin-top: -28px;
+    }
+
+    @media only screen and (max-width: 1500px) {
+
+        #service_olo .service_card {
+            /* font-size: 18px; */
+            width: 260px;
+            height: 300px;
+        }
+
+        .service_card .text_card {
+            font-size: 16px;
+            padding: 15px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -28px;
+        }
+
+        @media only screen and (max-width: 1460px) {
+            .service_card button {
+                font-size: 14px;
+                margin-top: -5px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1400px) {
+
+        #service_olo .service_card {
+            /* font-size: 18px; */
+            width: 235px;
+            height: 302px;
+        }
+
+        .service_card .text_card {
+            font-size: 15px;
+            padding: 15px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -5px;
+        }
+
+        @media only screen and (max-width: 1359px) {
+            .service_card button {
+                font-size: 14px;
+                margin-top: -24px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        #service_olo .service_card {
+            font-size: 18px;
+            width: 230px;
+            /* height: 315px; */
+            height: 295px;
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -30px;
+        }
+
+        .service_card .text_card {
+            font-size: 15px;
+            padding: 12px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+    }
+
+    @media screen and (max-width: 1261px) {
+        #service_olo .service_card {
+            font-size: 18px;
+            width: 223px;
+            /* height: 315px; */
+            height: 295px;
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -30px;
+        }
+
+        .service_card .text_card {
+            font-size: 15px;
+            padding: 12px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+
+        .title_card {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1204px) {
+        #service_olo .service_card {
+            font-size: 18px;
+            width: 207px;
+            /* height: 315px; */
+            height: 295px;
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -31px;
+        }
+
+        .service_card .text_card {
+            font-size: 15px;
+            padding: 12px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+    }
+
+    @media screen and (max-width: 1112px) {
+        #service_olo .service_card {
+            font-size: 18px;
+            width: 200px;
+            /* height: 315px; */
+            height: 295px;
+        }
+
+        .service_card button {
+            font-size: 14px;
+            margin-top: -31px;
+        }
+
+        .service_card .text_card {
+            font-size: 15px;
+            padding: 12px;
+            height: 200px;
+            /* transition: 0.5s; */
+        }
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1150px) {
+    #service_olo .service_card {
+        font-size: 18px;
+    }
+
+    p.text_card {
+        font-size: 15px !important;
+    }
+
+    .service_card a {
+        font-size: 15px;
+    }
+
+    .service_card button {
+        font-size: 15px;
+    }
+
+    .proactif_olo {
+        margin-bottom: 4%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1360px)and (max-width: 1460px) {
     p {
         font-size: 17px;
     }
@@ -878,9 +1099,8 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     #service_olo .service_card {
-        font-size: 20px;
-        width: 220px;
-        /* height: 315px; */
+        /* font-size: 1700px; */
+        width: 250px;
         height: 290px;
     }
 
@@ -896,10 +1116,6 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         font-size: 16px !important;
         margin-bottom: 0;
         line-height: 22px;
-    }
-
-    .title_card {
-        font-size: 18px;
     }
 
     .service_card a {
@@ -924,25 +1140,17 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         height: 27%;
     }
 
-    .service_card button {
-        font-size: 16px;
-    }
-
     .service_card .button_card {
         transform: translateY(-13px);
     }
 
-    .stat_number {
+    /* .stat_number {
         transform: translateY(7px);
-    }
+    } */
 
-    .stat_number h2 {
+    /* .stat_number h2 {
         font-size: 1.5rem;
-    }
-
-    .service_stat span {
-        line-height: 20px;
-    }
+    } */
 
     .proactif_olo,
     .conseil_olo {
@@ -970,7 +1178,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 }
 
-@media (min-width: 1150px) and (max-width: 1280px) {
+@media (min-width: 1298px) and (max-width: 1359px) {
 
     .proactif_olo,
     .conseil_olo {
@@ -982,28 +1190,16 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         flex-wrap: wrap;
         row-gap: 2%;
     }
+
 }
 
-@media only screen and (min-width:1024px) and (max-width: 1150px) {
-    #service_olo .service_card {
-        font-size: 18px;
+@media screen and (max-width:1045px) {
+
+    .btn-1.mr-2,
+    .btn-2.ml-2 {
+        font-size: 14px;
     }
 
-    p.text_card {
-        font-size: 15px !important;
-    }
-
-    .service_card a {
-        font-size: 15px;
-    }
-
-    .service_card button {
-        font-size: 15px;
-    }
-
-    .proactif_olo {
-        margin-bottom: 4%;
-    }
 }
 
 @media only screen and (min-width: 821px) and (max-width: 1024px) {
@@ -1088,19 +1284,6 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         height: 270px;
     }
 
-    .btn-1.mr-2,
-    .btn-2.ml-2 {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width:1045px) {
-
-    .btn-1.mr-2,
-    .btn-2.ml-2 {
-        font-size: 14px;
-    }
-
 }
 
 @media screen and (max-width:950px) {
@@ -1119,7 +1302,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
     }
 
     .service_stat div {
-        max-width: 175px;
+        max-width: 378px;
     }
 
     #partner_olo p {
@@ -1154,19 +1337,6 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         bottom: -2%;
     }
 
-    /* .btn-vous {
-        font-size: 5px;
-        display: flex;
-        gap: 2%;
-        flex-wrap: nowrap;
-        animation: upimation 3s ease;
-    } */
-
-    .btn-1.mr-2,
-    .btn-2.ml-2 {
-        font-size: 12px;
-    }
-
     .container.d-flex.h-75 {
         top: 33px;
     }
@@ -1181,18 +1351,12 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         font-size: 16px;
     }
 
-    @media screen and (max-width: 770px) {
-        /* .btn-vous {
-            display: flex;
-            width: 300px;
-            gap: 2%;
-            animation: upimation 3s ease;
-        } */
+    .btn-1.mr-2,
+    .btn-2.ml-2 {
+        font-size: 10px;
+    }
 
-        .btn-1.mr-2,
-        .btn-2.ml-2 {
-            font-size: 10px;
-        }
+    @media screen and (max-width: 770px) {
 
         .d-flex.flex-column.justify-content-center.px-5.w-50 {
             padding-left: 0 !important;
@@ -1281,9 +1445,14 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
         bottom: 4%;
         right: -18%;
     }
+
 }
 
-
+@media screen and (max-width:424px) {
+    #service_olo.scrollActive {
+        background-position-y: -178px;
+    }
+}
 
 /*** vvv Via JavaScript vvv ***/
 .forScrollUp {
@@ -1296,6 +1465,7 @@ a.js_subscribe_btn.o_submit.o_default_snippet_text {
 .forScrollUp.scrollActive {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 0px;
     transform: translateY(0);
     opacity: 1;
 }

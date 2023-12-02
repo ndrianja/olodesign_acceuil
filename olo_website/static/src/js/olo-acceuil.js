@@ -45,8 +45,14 @@ function reveal() {
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("scrollActive");
+            if (reveals[i].classList.contains("forScrollUp")) {
+                document.getElementById("service_olo").classList.add("scrollActive");
+            }
         } else {
             reveals[i].classList.remove("scrollActive");
+            if (reveals[i].classList.contains("forScrollUp")) {
+                document.getElementById("service_olo").classList.remove("scrollActive");
+            }
         }
     }
 }
